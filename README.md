@@ -27,3 +27,13 @@
     - Poiters receivers: You can declare methods with pointer receivers.
     - Compare: Pointers and Function.
     - Choosing a value or pointer receiver
+
++ Interface
+    - Decalare and implement interface
+    - Interface values
+
+## Goroutine
+- Luồng chạy
+
+## Channel
+- Dùng để giao tiếp giữa các Goroutines.

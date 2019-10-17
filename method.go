@@ -29,16 +29,16 @@ type Student struct {
 	student_address string
 }
 
-/*
-* Method with structure and receiver is value
+/**
+* * Method with structure and receiver is value
  */
 func (st Student) display() {
 	fmt.Println()
 	fmt.Printf("Name: %s - Age: %d - Address: %s", st.student_name, st.student_age, st.student_address)
 }
 
-/*
-* Method with non-structure
+/**
+* * Method with non-structure
  */
 type PhoneNumber string
 
@@ -47,20 +47,20 @@ func (p PhoneNumber) displayPhoneNumber() {
 	fmt.Printf("Phone Number: %s", p)
 }
 
-/*
-* Method with receiver is pointer
+/**
+* *Method with receiver is pointer
  */
 func (st *Student) display2() {
 	fmt.Println()
 	fmt.Printf("Name: %s - Age: %d - Address: %s", st.student_name, st.student_age, st.student_address)
 }
 
-// Can't change age
+//! Can't change age
 func (st Student) changeAge(newAge int) {
 	st.student_age = newAge
 }
 
-// Can change age
+//! Can change age
 func (st *Student) changeAge(newAge int) {
 	st.student_age = newAge
 }
